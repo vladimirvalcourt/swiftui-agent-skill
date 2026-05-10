@@ -40,7 +40,7 @@ if #available(iOS 26, *) {
 The primary modifier for applying glass effects to views:
 
 ```swift
-.glassEffect(_ style: GlassEffectStyle = .regular, in shape: some Shape = .rect)
+.glassEffect(_ glass: Glass = .regular, in shape: some Shape = .rect, isEnabled: Bool = true)
 ```
 
 #### Basic Usage
@@ -68,7 +68,7 @@ Text("Capsule")
     .glassEffect(in: .capsule)
 ```
 
-### GlassEffectStyle
+### Glass
 
 #### Available Styles
 
@@ -360,12 +360,12 @@ if #available(iOS 26, *) {
 extension View {
     @ViewBuilder
     func glassEffectWithFallback(
-        _ style: GlassEffectStyle = .regular,
+        _ glass: Glass = .regular,
         in shape: some Shape = .rect,
         fallbackMaterial: Material = .ultraThinMaterial
     ) -> some View {
         if #available(iOS 26, *) {
-            self.glassEffect(style, in: shape)
+            self.glassEffect(glass, in: shape)
         } else {
             self.background(fallbackMaterial, in: shape)
         }
