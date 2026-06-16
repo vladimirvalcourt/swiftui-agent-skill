@@ -175,13 +175,19 @@ swiftui-expert-skill/
     layout-best-practices.md - Layout patterns and GeometryReader alternatives
     liquid-glass.md - iOS 26+ glass effects and fallback patterns
     list-patterns.md - ForEach identity and list performance
+    localization.md
     macos-scenes.md - Scene lifecycle, multi-window setups, and menu bar scenes on macOS
     macos-views.md - macOS-specific SwiftUI views and platform differences from iOS
     macos-window-styling.md - Window chrome, toolbar, and title bar styling in SwiftUI
     performance-patterns.md - Hot-path optimizations and update control
+    previews.md
     scroll-patterns.md - ScrollViewReader and programmatic scrolling
     sheet-navigation-patterns.md - Sheets and type-safe navigation
+    soft-deprecation.md
     state-management.md - Property wrapper selection and data flow
+    text-patterns.md
+    trace-analysis.md
+    trace-recording.md
     view-structure.md - View extraction and composition patterns
 ```
 <!-- END REFERENCE STRUCTURE -->
